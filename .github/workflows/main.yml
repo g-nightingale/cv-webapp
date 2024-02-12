@@ -40,7 +40,7 @@ jobs:
           EC2_HOST: your-ec2-public-dns-or-ip
         run: |
           # Install SSH Client
-          sudo apt-get update && sudo apt-get install -y openssh-client
+          # sudo apt-get update && sudo apt-get install -y openssh-client
           # Setup SSH Key
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
