@@ -37,13 +37,12 @@ jobs:
       - name: Deploy to EC2
         env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
-          EC2_HOST: 18.170.233.20
+          EC2_HOST: ${{ secrets.EC2_HOST }}
         run: |
           # Install SSH Client
           sudo apt-get update && sudo apt-get install -y openssh-client
           # Setup SSH Key
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY"
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H "$EC2_HOST" >> ~/.ssh/known_hosts
