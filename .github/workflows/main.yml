@@ -1,6 +1,7 @@
 name: Python application testing
 
 on:
+  workflow_dispatch:  # Allows the workflow to be triggered manually
   push:
     branches: [ main ]
   pull_request:
