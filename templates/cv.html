@@ -6,9 +6,10 @@
     <title>CV Geoff Nightingale</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: "Times New Roman", Times, Georgia, serif;
             color: #333;
             background-color: #f5f5f5;
         }
@@ -38,17 +39,38 @@
         }
         ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 10px;
+            padding-left: 20px;
         }
         .bottomborder {
             border-bottom: 1px solid #eee;
+        }
+        .download-link {
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: inherit;
+            font-family: inherit;
+        }
+        .download-link:hover {
+            color: #0056b3;
+        }
+        @media print {
+            .download-link { display: none; }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Geoff Nightingale: Data Scientist | ML Engineer </h1>
+    <h1>Geoff Nightingale: Full Stack Data Scientist </h1>
     <div style="margin-top: 5px; margin-bottom: 20px;">
+        <button class="download-link" onclick="downloadPDF()">
+            <i class="fas fa-file-pdf" style="margin-right: 5px;"></i>Download PDF
+        </button>
         <a href="https://github.com/yourusername" target="_blank" style="text-decoration: none; color: #333; margin-right: 15px;">
             <i class="fab fa-github" style="margin-right: 5px;"></i>GitHub
         </a>
@@ -60,23 +82,35 @@
         </a>
     </div>
 
-    <p>Highly qualified and experienced Machine Learning practitioner with over 12 years experience applying Machine Learning across 
-        multiple industries including Banking, Insurance and Energy. Broad skillset covering ML Engineering, Data Science and Data 
-        Engineering disciplines. Commercial experience in implementing MLOps solutions. Advanced skills in Python and SQL, software 
-        engineering practices and commercial experience using Azure and AWS cloud technologies. Team player, fast learner and strong 
-        communicator.</p>
+    <p>Experienced data scientist with a proven track record across the Finance, Technology, Insurance, and Energy sectors. I bring a broad, 
+        end-to-end skill set spanning Data Engineering, Data Science and Machine Learning Engineering. I combine strong technical expertise 
+        with excellent stakeholder engagement, a commercially focused mindset, and a consistent history of delivering measurable business 
+        value.</p>
     
     <h2>Skills</h2>
     <ul>
         <li><strong>Programming Languages: </strong> Python, SQL, C#, Dart</li>
         <li><strong>DS / ML Libraries: </strong> Numpy, Pandas, ScitkitLearn, PyTorch, Tensorflow, Keras, plotly, matplotlib</li>
-        <li><strong>Big data and databases: </strong>PySpark, Snowflake, Databricks, Oracle, Snowflake</li>
-        <li><strong>DevOps and MLOps: </strong>Terraform, Git, Github Actions, Gitlab, Docker, Airflow, MLFlow, Flask, FastAPI</li>
-        <li><strong>Cloud Platforms: </strong>AWS, Azure</li>
+        <li><strong>Big data and databases: </strong>Snowflake, DBT, Databricks, PySpark, Oracle, Databricks</li>
+        <li><strong>Data Viz: </strong>Looker, Streamlit, Plotly, Matplotlib, Seaborn</li>
+        <li><strong>DevOps and MLOps: </strong>Git, Github Actions, Docker, Terraform, Airflow, MLFlow, Flask, FastAPI</li>
+        <li><strong>Cloud Platforms: </strong>GCP, AWS, Azure</li>
     </ul>
 
     <h2>Experience</h2>
-    <p><strong>Senior Consultant</strong> - Contino, London | Apr 2022 - Present</p>    
+    <p><strong>Data Science Lead</strong> - Zilch, London | Jul 2024 - Present</p> 
+    At Zilch, I lead AI and ML development across the Credit Risk, Fraud, and Collections domains.
+    <ul>
+        <li>Defined and delivered the model development roadmap across these areas and regularly presented progress and outcomes to C-suite stakeholders.</li>
+        <li>Developed core models including transaction fraud detection, probability of default, and propensity-to-pay, and advised the business on their practical application in decisioning and strategy.</li>
+        <li>Translated random forest outputs into production-ready fraud rules, contributing to a reduction in fraud of over 10%.</li>
+        <li>Oversaw the development of application scorecards and their use within credit strategy, including decline rules, risk banding, and product allocation.</li>
+        <li>Designed the methodology for assigning initial customer credit limits and built the affordability-driven credit limit increase logic, enabling over £10M in monthly credit limit uplifts.</li>
+        <li>Led enhancements to model monitoring dashboards and worked closely with senior stakeholders including the Chief Product Officer and Chief Risk Officer.</li>
+    </ul>
+    <p class="bottomborder"></p>
+
+    <p><strong>Senior Consultant</strong> - Contino, London | Apr 2022 - Jul 2024</p>    
     Technical delivery of Data Science and Data Engineering projects across client engagements. <br>
     <i>Energy Company:</i>
     <ul>
@@ -131,7 +165,7 @@
     </ul>
     <p class="bottomborder"></p>
 
-    <p><strong>Senior Data Scientist</strong> - ANZ, Auckland | Sep 2016 - Dec 2017</p>
+    <p><strong>Credit Risk Manager</strong> - ANZ, Auckland | Jun 2013 - Sep 2016</p>
     Optimisation of new business and existing customer credit risk strategies using quantitative methods.
     <ul>
         <li>Developed a new credit limit assignment strategy using decision trees and k-means clustering. This work was expected to generate a $1M p.a.
@@ -148,35 +182,41 @@
        <li>Used linear regression to predict total payments to be recovered on charged-off debt in the following 12 months. This model was used to rank
 and prioritise collection accounts. A/B testing results showed a recoveries uplift of 22% over 6 months when using this model vs control.</li>
         <li>Responsible for producing monthly Credit Scorecard monitoring reports for Credit Cards.</li>
-        <li></li>Conducted A/B testing of various contact channel combinations in order to formulate improved contact strategies.</li>
+        <li>Conducted A/B testing of various contact channel combinations in order to formulate improved contact strategies.</li>
     </ul>
     
     <h2>Education & Certifications</h2>
-    <p><strong>MSc Artificial Intelligence</strong> - University of Bath | 2020-2023</p>
-    <p><strong>BSc Economics & Finance</strong> - University of Waikato | 2005-2009</p>
+    <p><strong>MSc Artificial Intelligence (Distinction)</strong> - University of Bath | 2020-2023</p>
+    <p><strong>BSc Economics & Finance (Honours)</strong> - University of Waikato | 2005-2009</p>
     <p><strong>Deployment of ML Models</strong> - Udemy | 2021</p>
     <p><strong>Deep Learning Specialization</strong> - Coursera | 2019</p>
     <p><strong>Machine Learning</strong> - Coursera | 2015</p>
 
     <h2>Projects</h2>
-    <p><strong>Portfolio Optimisation</strong></p>
+    <p><strong>Financial Projects</strong></p>
     <ul>
-        <li>Webapp to calculate optimal portfolios for a set of stocks.</li>
-        <li>Python, Flask, Docker, EC2, SQLlite</li>
-        <li><a href="http://www.geoffai.com/portfolio-optimisation">LINK</a></li>
-    </ul>
-    <p><strong>Transaction Prediction</strong></p>
-    <ul>
-        <li>Dashboard for predicting transaction amounts using synthetic data.</li>
-        <li>Python, Flask, Docker, EC2, SQLlite</li>
-        <li><a href="http://www.geoffai.com/trans-pred-dashboard">LINK</a></li>
-    </ul>
-    <p><strong>Book Recommendation System</strong></p>
-    <ul>
-        <li>Webapp for recommending books to a user based on books they like.</li>
-        <li>Python, Flask, Docker, EC2, SQLlite</li>
+        <li><a href="https://markets-dashboard.nrg-lab.dev">Algorithmic Trading with RL</a>: Learns and tests optimal trading strategies using reinforcement learning. </li>
+        <li><a href="https://markets-dashboard.nrg-lab.dev">Markets Dashboard</a>: Dashboard for tracking market movements and correlations across multiple asset classes. </li>
+        <li><a href="https://markets-dashboard.nrg-lab.dev">Portfolio Optimisation</a>: Optimises allocation of a set of assets using classical portfilio theory. </li>
     </ul>
 
+    <p><strong>Health Projects</strong></p>
+    <ul>
+        <li><a href="https://meal-deal-optimiser.nrg-lab.dev">Meal Deal Optimiser</a>: Suggests meal deal combinations, optimised to the users nurtrional goals. </li>
+    </ul>
 </div>
+<script>
+    function downloadPDF() {
+        const element = document.querySelector('.container');
+        const opt = {
+            margin: 10,
+            filename: 'cv-geoff-nightingale.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    }
+</script>
 </body>
 </html>
