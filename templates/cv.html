@@ -68,18 +68,21 @@
 <div class="container">
     <h1>Geoff Nightingale: Full Stack Data Scientist </h1>
     <div style="margin-top: 5px; margin-bottom: 20px;">
-        <button class="download-link" onclick="downloadPDF()">
-            <i class="fas fa-file-pdf" style="margin-right: 5px;"></i>Download PDF
-        </button>
+        <a href="https://geoff-cv.nrg-lab.dev/" target="_blank" style="text-decoration: none; color: #333; margin-right: 15px;">
+            <i class="fas fa-globe" style="margin-right: 5px;"></i>Website
+        </a>
         <a href="https://github.com/g-nightingale" target="_blank" style="text-decoration: none; color: #333; margin-right: 15px;">
             <i class="fab fa-github" style="margin-right: 5px;"></i>GitHub
         </a>
         <a href="https://www.linkedin.com/in/geoff-nightingale-27153360/" target="_blank" style="text-decoration: none; color: #007bff; margin-right: 15px;">
             <i class="fab fa-linkedin" style="margin-right: 5px;"></i>LinkedIn
         </a>
-        <a href="mailto:geoffrey.nightingale@gmail.com" style="text-decoration: none; color: #333;">
+        <a href="mailto:geoffrey.nightingale@gmail.com" style="text-decoration: none; color: #333; margin-right: 15px;">
             <i class="fas fa-envelope" style="margin-right: 5px;"></i>Email
         </a>
+        <button class="download-link" onclick="downloadPDF()">
+            <i class="fas fa-file-pdf" style="margin-right: 5px;"></i>Download PDF
+        </button>
     </div>
 
     <p>
@@ -93,9 +96,9 @@
     <ul>
         <li><strong>Programming Languages: </strong> Python, SQL, Bash, C#, Java</li>
         <li><strong>Data Science / ML Libraries: </strong> Numpy, Pandas, ScikitLearn, PyTorch, Tensorflow, Keras, LightGBM, XGBoost</li>
-        <li><strong>Big data and databases: </strong>Snowflake, DBT, Databricks, PySpark, Oracle</li>
+        <li><strong>Big data and databases: </strong>Snowflake, DBT, RedShift,Databricks, PySpark, Oracle</li>
         <li><strong>Data Visualisation: </strong>Looker, Streamlit, Plotly, Matplotlib, Seaborn</li>
-        <li><strong>DevOps and MLOps: </strong>Git, Github Actions, Docker, Terraform, FastAPI, SageMaker Pipelines, DataDog, Airflow, MLFlow, Flask, CloudBuild, CloudRun</li>
+        <li><strong>DevOps and MLOps: </strong>Git, Github Actions, Docker, Terraform, FastAPI, AWS SageMaker, AWS ECR, AWS ECS, DataDog, Airflow, MLFlow, Flask, GCP CloudBuild, GCP CloudRun, Azure Repos, Azure DevOps, Azure ML Studio</li>
         <li><strong>Cloud Platforms: </strong>GCP, AWS, Azure (I have commercial experience across all three)</li>
         <li><strong>AI Tools: </strong>Claude CLI, OpenAI API, Cursor</li>
     </ul>
@@ -104,14 +107,14 @@
     <p><strong>Data Science Lead</strong> - <a href="https://www.zilch.com" target="_blank">Zilch</a>, London | Jul 2024 - Present</p>
     At Zilch I lead AI and ML development across the Credit Risk, Fraud, and Collections domains.
     <ul>
-        <li>Led development and strategic direction of ML models across Risk, Fraud and Collections including application risk models, in-life customer risk models, transaction fraud models, collections propensity to pay models, and early-life customer value models.</li>
-        <li>Collaborated with senior leadership and stakeholders to design Data Science roadmap to ensure models are aligned with stakeholder objectives and KPIs. Led regular updates to senior management and ExCo.</li>
-        <li>Owned end-to-end model lifecycle, from design and validation through to production deployment and monitoring, utilising Github Actions, Docker, ECR, SageMaker Pipelines and Terraform.</li>
-        <li>Supported Risk team in strategic implementation of models, by providing thought leadership in defining actionable segmentation to directly influence portfolio growth and risk outcomes.</li>
+        <li>Led development of ML models including application risk models, in-life customer risk models, transaction fraud models, collections propensity to pay models, and early-life customer value models.</li>
+        <li>Collaborated with senior leadership and stakeholders to design Data Science roadmap aligned with stakeholder objectives and KPIs. Led regular updates to senior management and ExCo.</li>
+        <li>Owned end-to-end model lifecycle, from design and model development through to production deployment and monitoring, utilising Github Actions, Docker, ECR, SageMaker Pipelines and Terraform.</li>
+        <li>Supported Risk team in strategic implementation of models, by providing thought leadership on how models should be used in strategy to meet portfolio growth and risk objectives.</li>
         <li>Designed and implemented experimentation frameworks (A/B testing) to evaluate model-driven strategies (e.g. product allocation, credit policies), improving decision quality and enabling statistically robust optimisation.</li>
         <li>Established standardised model monitoring and governance frameworks, enabling scalable tracking of model performance, score stability and drift across models in production.</li>
         <li>Led integration of alternative data sources (Experian DCM, open banking) into model development and decisioning, unlocking significant commercial impact (£76M incremental credit limits and £12M GMV per month).</li>
-        <li>Directed migration of model pipelines and risk models to Snowflake, ensuring reproducibility, consistency, and continuity of model performance in production environments.</li>
+        <li>Migrated model pipelines from RedShift to Snowflake, ensuring reproducibility, consistency, and continuity of model performance in production environments.</li>
         <li>Pioneered use of Claude CLI skills to increase velocity of updating production code boilerplate, greatly reducing time to market for new models.</li>
     </ul>
     <p class="bottomborder"></p>
@@ -154,8 +157,9 @@
     <p><strong>Senior Consultant</strong> - Euristix, London | Sep 2016 - Dec 2017</p>
     Responsible for leading model development and data science projects.
     <ul>
-        <li>Developed IFRS9 model using Markov decision process to forecast expected credit losses.</li>
+        <li>Developed IFRS9 model to forecast expected credit losses for Mortgage book. Methodology used roll-rate driven Markov decision process linked to economic indicators.</li>
         <li>Developed debt pricing models using decision trees and regression models to provide pricing estimates to debt collection agencies.</li>
+        <li>Implemented novel modelling approaches using trigonometric functions to model time-series data.
         <li>Lead and mentored a team of 3 analysts, managed objectives and career progression.</li>
     </ul>
     <p class="bottomborder"></p>
@@ -187,7 +191,7 @@ and prioritise collection accounts. A/B testing results showed a recoveries upli
     <p><strong>Deep Learning Specialization</strong> - Coursera | 2019</p>
     <p><strong>Machine Learning</strong> - Coursera | 2015</p>
 
-    <h2>Projects</h2>
+    <h2>Projects and Interests</h2>
     <p><strong>Master's Thesis</strong></p>
     <ul>
         <li><a href="https://marl-ctf.nrg-lab.dev">Multi-Agent Reinforcement Learning for Capture The Flag</a>: Agents learn to play Capture The Flag using multi-agent reinforcement learning. </li>
@@ -203,6 +207,8 @@ and prioritise collection accounts. A/B testing results showed a recoveries upli
         <li><a href="https://meal-deal-optimiser.nrg-lab.dev">Meal Deal Optimiser</a>: Optimises a Sainsbury's meal deal according to the user's nurtrional goals. </li>
         <li><a href="https://nutrition-planner.nrg-lab.dev">Running Calorie Calculator & Meal Planner</a>: Calculates the calories burned and generates a meal plan based on the user's activity level. </li>
     </ul>
+    <p><strong>Interests</strong></p>  
+    <p>Outside of work I enjoy recreational programming, running, cycling, swimming, reading (mostly non-fiction), and making music.</p>
 </div>
 <script>
     function downloadPDF() {
